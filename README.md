@@ -37,11 +37,3 @@ Các DOI và thông tin thư mục được liệt kê ở cuối trang web; li�
 ## In hoặc lưu PDF
 
 Mở `index.html`, chọn **In** trong trình duyệt và lưu thành PDF. Kiểm tra xem toàn bộ section đã tải xong trước khi in.
-
-## Thành viên nhóm 5
-
-1. Lưu Gia Hưng — 1092371
-2. Nguyễn Chí Hướng — 1092571
-3. Đoàn Hữu Quang Huy — 1092071
-4. Nguyễn Dương Đức Huy — 1092171
-5. Bùi Thanh Huyền — 1092271
