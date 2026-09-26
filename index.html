@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#341421">
+  <meta name="description" content="Scrollytelling của nhóm 5 về tác động của biến đổi khí hậu đến công trình xây dựng và hạ tầng đô thị.">
+  <title>Khi khí hậu thử thách hạ tầng — Nhóm 5</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng, đến nội dung</a>
+
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="Về đầu trang">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="brand-name">HẠ TẦNG <i>/</i> KHÍ HẬU</span>
+    </a>
+    <div class="topbar-right">
+      <span class="course-label">MÔI TRƯỜNG &amp; PHÁT TRIỂN BỀN VỮNG</span>
+      <span class="top-divider" aria-hidden="true"></span>
+      <span class="team-label">NHÓM 05</span>
+      <button class="toc-toggle" id="toc-toggle" type="button" aria-expanded="false" aria-controls="chapter-nav">
+        <span>Mục lục</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+      </button>
+    </div>
+    <nav class="chapter-nav" id="chapter-nav" aria-label="Điều hướng các phần" hidden>
+      <div class="nav-heading"><span>HÀNH TRÌNH</span><button type="button" id="toc-close" aria-label="Đóng mục lục">×</button></div>
+      <a href="#section-01"><b>01</b> Mở đầu</a>
+      <a href="#section-02"><b>02</b> Vì sao cần quan tâm?</a>
+      <a href="#section-03"><b>03</b> Từ hiểm họa đến rủi ro</a>
+      <a href="#section-04"><b>04</b> Ngập lụt</a>
+      <a href="#section-05"><b>05</b> Nắng nóng</a>
+      <a href="#section-06"><b>06</b> Gián đoạn mạng lưới</a>
+      <a href="#section-07"><b>07</b> Nghiên cứu tại Việt Nam</a>
+      <a href="#section-08"><b>08</b> Tác động đến cộng đồng</a>
+      <a href="#section-09"><b>09</b> Giải pháp thích ứng</a>
+      <a href="#section-10"><b>10</b> Kết luận</a>
+      <a href="#team-roster"><b>＋</b> Thành viên nhóm</a>
+    </nav>
+  </header>
+
+  <div class="progress-track" aria-hidden="true"><span id="progress-fill"></span></div>
+  <div class="reading-status" aria-live="polite"><span id="current-number">01</span><span class="status-slash">/</span><span>10</span><span class="status-label">PHẦN ĐANG XEM</span></div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow hero-eyebrow"><span class="eyebrow-dot"></span> MÔI TRƯỜNG &amp; PHÁT TRIỂN BỀN VỮNG <span class="eyebrow-sep">/</span> NHÓM 05</p>
+        <div class="hero-damage" aria-label="Một số liệu thiệt hại do thiên tai được ghi nhận">
+          <p class="hero-damage-heading">THIỆT HẠI DO THIÊN TAI ĐƯỢC GHI NHẬN</p>
+          <a class="hero-damage-stat" href="https://phongchongthientai.mard.gov.vn/Pages/nam-2024-thien-tai-khoc-liet-cuc-doan-gay-thiet-hai-vo-cung-nang-ne.aspx" target="_blank" rel="noopener noreferrer"><span>VIỆT NAM · 2024 ↗</span><b>89.089 <small>tỷ đồng</small></b></a>
+          <a class="hero-damage-stat" href="https://wmo.int/media/news/economic-costs-of-weather-related-disasters-soars-early-warnings-save-lives" target="_blank" rel="noopener noreferrer"><span>TOÀN CẦU · 1970–2021 ↗</span><b>US$ 4,3 <small>nghìn tỷ</small></b></a>
+          <p class="hero-damage-note">Hai giai đoạn thống kê khác nhau · xem biểu đồ và phạm vi nguồn ở phần mở đầu</p>
+        </div>
+        <h1 id="hero-title">Khi khí hậu<br><em>thử thách</em> hạ tầng</h1>
+        <p class="hero-deck">Mưa lớn, ngập lụt và nắng nóng tác động lên cầu, đường và đường sắt như thế nào — và chúng ta có thể chuẩn bị ra sao?</p>
+        <a class="scroll-cue" href="#section-01"><span class="scroll-cue-line"></span><span>CUỘN ĐỂ KHÁM PHÁ</span><span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-label="Minh họa cây cầu đô thị trước mưa lớn">
+        <div class="hero-coordinate coord-a">SƠ ĐỒ KHÁI QUÁT<br>HẠ TẦNG ĐÔ THỊ</div>
+        <div class="hero-coordinate coord-b">HẠ TẦNG GIAO THÔNG<br><b>TRẠNG THÁI: THÍCH ỨNG</b></div>
+        <svg viewBox="0 0 740 570" role="img" aria-labelledby="hero-svg-title hero-svg-desc">
+          <title id="hero-svg-title">Cầu đô thị và các lớp mưa, nước, hạ tầng</title>
+          <desc id="hero-svg-desc">Minh họa cầu bắc qua vùng nước với mưa và đường chân trời thành phố.</desc>
+          <defs>
+            <linearGradient id="heroSky" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#3B1728"/><stop offset="1" stop-color="#341421"/></linearGradient>
+            <linearGradient id="heroWater" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#8C6E7A"/><stop offset="1" stop-color="#6C2D47"/></linearGradient>
+            <pattern id="heroGrid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#E2BCC6" stroke-opacity=".09" stroke-width="1"/></pattern>
+          </defs>
+          <rect x="10" y="10" width="720" height="550" rx="4" fill="url(#heroSky)" stroke="#A1848E" stroke-opacity=".34"/>
+          <rect x="10" y="10" width="720" height="550" fill="url(#heroGrid)"/>
+          <circle cx="554" cy="151" r="89" fill="#B77487" fill-opacity=".08"/>
+          <circle cx="554" cy="151" r="48" fill="#B77487" fill-opacity=".22"/>
+          <g fill="#A1848E" fill-opacity=".18">
+            <path d="M46 326h58V195h48v131h47V235h53v91h48V173h66v153h47V218h56v108h41V192h59v134h111v51H46z"/>
+            <path d="M52 300h29v-42h29v42h18v-86h35v86h33v-66h27v66h33v-51h42v51h32v-82h37v82h24v-45h35v45h31v-71h41v71h26v-89h33v89h44v-56h29v56h41v-77h39v77h24v-30h22v30h27v-66h28v66h18v38H52z" fill-opacity=".32"/>
+          </g>
+          <path d="M10 380Q162 361 294 382T564 378T730 382V560H10Z" fill="url(#heroWater)"/>
+          <g stroke="#E8D4D8" stroke-opacity=".28" stroke-width="2"><path d="M28 438q46-9 91 0t91 0t91 0t91 0t91 0t91 0t91 0t91 0"/><path d="M48 490q37-7 74 0t74 0t74 0t74 0t74 0t74 0t74 0t74 0t74 0"/><path d="M18 530q42-6 84 0t84 0t84 0t84 0t84 0t84 0t84 0t84 0t84 0"/></g>
+          <g fill="none" stroke="#B77487" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 344Q175 339 284 351Q370 361 431 348Q552 322 730 337"/>
+            <path d="M266 351V202M482 342V205" stroke-width="7"/>
+            <path d="M266 204Q374 176 482 206" stroke-width="5"/>
+          </g>
+          <g stroke="#B77487" stroke-opacity=".6" stroke-width="2">
+            <path d="M276 212 315 347M295 205 335 353M315 199 355 356M335 194 375 357M355 190 395 358M375 188 415 354M395 190 435 351M415 194 455 348M435 198 473 344"/>
+          </g>
+          <path d="M267 352h-38v42h77v-42M484 344h-37v50h74v-50" fill="#B77487" fill-opacity=".24" stroke="#B77487" stroke-width="3"/>
+          <g stroke="#A1848E" stroke-opacity=".37" stroke-width="2">
+            <path d="M88 42l-18 43M137 82l-18 43M206 35l-18 43M578 54l-18 43M647 110l-18 43M691 65l-18 43M354 72l-18 43M436 45l-18 43"/>
+          </g>
+          <g fill="#782940"><circle cx="267" cy="352" r="6"/><circle cx="482" cy="343" r="6"/></g>
+          <g fill="#FFF8F2" font-family="Arial, sans-serif" font-size="10" letter-spacing="1.5"><text x="35" y="45">ĐÔ THỊ</text><text x="35" y="423">MỰC NƯỚC</text><text x="549" y="516">HẠ TẦNG KẾT NỐI</text></g>
+        </svg>
+        <span class="art-index">FIG. 01 <i>—</i> INFRASTRUCTURE / CLIMATE</span>
+      </div>
+      <div class="hero-bottom"><span>SCROLL STORY</span><span>NHÓM 05 <i>·</i> 06:40</span><span>10 PHẦN</span></div>
+    </section>
+
+    <div class="story-intro"><span class="intro-mark">A</span><p>Một công trình không đứng ngoài khí hậu. Nó nằm trong một mạng lưới — và mỗi mắt xích đều ảnh hưởng đến khả năng đi lại, vận chuyển và tiếp cận dịch vụ.</p></div>
+
+    <div class="chapters">
+      <section class="chapter chapter--01" id="section-01" data-chapter="01" aria-labelledby="title-01">
+        <div class="visual-card visual--opening glow-card">
+          <div class="visual-topline"><span>01 / ĐIỂM KHỞI ĐẦU</span><span>ĐỌC CẢNH QUAN</span></div>
+          <svg viewBox="0 0 620 470" role="img" aria-label="Sơ đồ một tuyến đường, cây cầu và đô thị đặt trong vùng mưa">
+            <defs><linearGradient id="v1sky" x2="0" y2="1"><stop stop-color="#FFF8F2"/><stop offset="1" stop-color="#FFF8F2"/></linearGradient><pattern id="v1dots" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#A1848E" opacity=".5"/></pattern></defs>
+            <rect width="620" height="470" fill="url(#v1sky)"/><rect y="250" width="620" height="220" fill="#A1848E"/><rect width="620" height="470" fill="url(#v1dots)" opacity=".4"/>
+            <g fill="#704957" opacity=".45"><path d="M33 258V156h35v102h34V190h41v68h36V137h49v121h37V174h39v84h43V150h44v108h51V185h43v73h49v-98h39v98h34v69H33z"/></g>
+            <path d="M0 303Q132 299 230 314Q327 329 397 308Q489 280 620 295" fill="none" stroke="#3B1728" stroke-width="19" stroke-linecap="round"/>
+            <path d="M234 313V205M394 309V204M234 207Q315 176 394 207" fill="none" stroke="#782940" stroke-width="5"/>
+            <path d="M242 211 262 313M260 202 280 319M278 196 298 321M297 190 316 324M316 188 334 322M336 192 354 319M355 197 374 315M374 203 390 310" stroke="#782940" stroke-opacity=".55" stroke-width="2"/>
+            <g stroke="#8C6E7A" stroke-width="2" opacity=".55"><path d="M104 42 90 85M172 30 158 73M472 48 458 91M531 73 517 116M348 37 334 80M230 48 216 91"/></g>
+            <g fill="#3B1728" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1"><text x="34" y="348">MẠNG LƯỚI ĐÔ THỊ</text><text x="420" y="384">TÁC ĐỘNG LAN TRUYỀN</text></g>
+            <g fill="#782940"><circle cx="234" cy="313" r="7"/><circle cx="394" cy="309" r="7"/></g>
+          </svg>
+          <div class="visual-caption"><span class="caption-line"></span><span>HẠ TẦNG LÀ MỘT HỆ THỐNG KẾT NỐI</span></div>
+        </div>
+        <div class="chapter-copy reveal">
+          <div class="chapter-meta"><span>01</span><span class="meta-rule"></span><span>00:20</span></div>
+          <p class="eyebrow">MỞ ĐẦU</p>
+          <h2 id="title-01">Một trận mưa.<br><em>Nhiều điểm đứt gãy.</em></h2>
+          <p>Mưa lớn, ngập lụt hay nắng nóng kéo dài có thể tác động lên cầu, đường và đường sắt. Một hư hỏng tại một vị trí cũng có thể làm thay đổi cách cả mạng lưới vận hành.</p>
+          <div class="damage-brief" aria-labelledby="damage-heading">
+            <div class="damage-brief-heading">
+              <span id="damage-heading">THIỆT HẠI ĐƯỢC GHI NHẬN</span>
+              <span>VIỆT NAM / TOÀN CẦU</span>
+            </div>
+            <div class="damage-grid">
+              <article class="damage-card damage-card--vietnam glow-card">
+                <div class="damage-card-top"><span>VIỆT NAM</span><span>2024</span></div>
+                <p class="damage-total">89.089 <small>tỷ đồng</small></p>
+                <p class="damage-description">Thiệt hại kinh tế do thiên tai trên cả nước.</p>
+                <div class="damage-chart" role="img" aria-label="Thiệt hại kinh tế năm 2024 cao gấp 4,2 lần mức trung bình giai đoạn 2014 đến 2023">
+                  <div class="damage-chart-row">
+                    <span class="damage-bar-label">TB 2014–23 <b>1×</b></span>
+                    <span class="damage-bar-track"><i style="--bar-width: 23.8%"></i></span>
+                  </div>
+                  <div class="damage-chart-row">
+                    <span class="damage-bar-label">Năm 2024 <b>4,2×</b></span>
+                    <span class="damage-bar-track"><i style="--bar-width: 100%"></i></span>
+                  </div>
+                </div>
+                <p class="damage-infrastructure"><b>914 km</b> đường giao thông bị sạt lở, hư hỏng hoặc ách tắc.</p>
+                <a class="damage-source" href="https://phongchongthientai.mard.gov.vn/Pages/nam-2024-thien-tai-khoc-liet-cuc-doan-gay-thiet-hai-vo-cung-nang-ne.aspx" target="_blank" rel="noopener noreferrer">CỤC QUẢN LÝ ĐÊ ĐIỀU &amp; PCTT <span aria-hidden="true">↗</span></a>
+              </article>
+              <article class="damage-card damage-card--world glow-card">
+                <div class="damage-card-top"><span>TOÀN CẦU</span><span>1970–2021</span></div>
+                <p class="damage-total">US$ 4,3 <small>nghìn tỷ</small></p>
+                <p class="damage-description">Thiệt hại kinh tế được báo cáo từ các hiện tượng thời tiết, khí hậu và nước cực đoan.</p>
+                <div class="world-impact" role="img" aria-label="Trong giai đoạn 1970 đến 2021: 11.778 thảm họa được ghi nhận và hơn 2 triệu người thiệt mạng">
+                  <div><b>11.778</b><span>thảm họa<br>được báo cáo</span></div>
+                  <span class="world-impact-rule" aria-hidden="true"></span>
+                  <div><b>&gt;2 triệu</b><span>người<br>thiệt mạng</span></div>
+                </div>
+                <a class="damage-source" href="https://wmo.int/media/news/economic-costs-of-weather-related-disasters-soars-early-warnings-save-lives" target="_blank" rel="noopener noreferrer">TỔ CHỨC KHÍ TƯỢNG THẾ GIỚI (WMO) <span aria-hidden="true">↗</span></a>
+              </article>
+            </div>
+            <p class="damage-caveat">Khác nhau về giai đoạn và cách tổng hợp nên không so sánh trực tiếp hai tổng thiệt hại. Đây là số liệu thiệt hại do thiên tai được ghi nhận, không đồng nghĩa toàn bộ đều được quy kết trực tiếp cho biến đổi khí hậu.</p>
+          </div>
+          <p class="key-line"><span>Ý CHÍNH</span> Hạ tầng cần được nhìn cùng khí hậu và mạng lưới đô thị quanh nó.</p>
+        
+          <div class="source-panel glow-card" aria-label="Các tài liệu uy tín liên quan">
+            <p class="source-heading">CÁC TÀI LIỆU UY TÍN</p>
+            <div class="source-links">
+              <a href="https://doi.org/10.1016/j.trd.2020.102553" target="_blank" rel="noopener noreferrer">Rủi ro khí hậu và quy hoạch giao thông · 2020 <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.3390/ijerph182312314" target="_blank" rel="noopener noreferrer">Khung đánh giá thích ứng cho đường bộ và đường sắt · 2021 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--02" id="section-02" data-chapter="02" aria-labelledby="title-02">
+        <div class="visual-card visual--lifecycle glow-card">
+          <div class="visual-topline"><span>02 / VÒNG ĐỜI CÔNG TRÌNH</span><span>THỜI GIAN DÀI</span></div>
+          <div class="lifecycle">
+            <div class="cycle-track"><span class="cycle-path"></span><span class="cycle-fill"></span>
+              <div class="cycle-node node-1 glow-card"><b>01</b><span>THIẾT KẾ</span><i>Giả định khí hậu</i></div>
+              <div class="cycle-node node-2 glow-card"><b>02</b><span>XÂY DỰNG</span><i>Vật liệu &amp; cấu tạo</i></div>
+              <div class="cycle-node node-3 glow-card"><b>03</b><span>KHAI THÁC</span><i>Đi lại mỗi ngày</i></div>
+              <div class="cycle-node node-4 glow-card"><b>04</b><span>BẢO TRÌ</span><i>Chi phí &amp; thích ứng</i></div>
+            </div>
+            <div class="cycle-note glow-card"><span class="note-icon">↗</span><p><b>Vòng đời dài hơn một mùa.</b><br>Thiết kế hôm nay sẽ vận hành trong điều kiện khí hậu tương lai.</p></div>
+            <div class="timeline-years"><span>HÔM NAY</span><span class="timeline-dashes"></span><span>MAI SAU</span></div>
+          </div>
+          <div class="visual-caption"><span class="caption-line"></span><span>QUYẾT ĐỊNH SỚM ĐỊNH HÌNH CHI PHÍ VỀ SAU</span></div>
+        </div>
+        <div class="chapter-copy reveal">
+          <div class="chapter-meta"><span>02</span><span class="meta-rule"></span><span>00:30</span></div>
+          <p class="eyebrow">VÌ SAO CẦN QUAN TÂM?</p>
+          <h2 id="title-02">Công trình sống<br><em>lâu hơn một mùa.</em></h2>
+          <p>Cầu, đường và đường sắt phục vụ đi lại, vận chuyển và kết nối dịch vụ. Chúng được thiết kế để khai thác lâu dài, nên thay đổi về nhiệt độ, mưa và ngập có thể ảnh hưởng đến độ bền, bảo trì và khả năng lưu thông.</p>
+          <p class="key-line"><span>THỜI LƯỢNG</span> Khoảng 6 phút 40 giây; phân công để mọi thành viên cùng trình bày.</p>
+          
+        
+          <div class="source-panel glow-card" aria-label="Các tài liệu uy tín liên quan">
+            <p class="source-heading">CÁC TÀI LIỆU UY TÍN</p>
+            <div class="source-links">
+              <a href="https://doi.org/10.1002/wcc.728" target="_blank" rel="noopener noreferrer">Tác động khí hậu đến hạ tầng đường sắt · 2021 <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.1016/j.trd.2020.102553" target="_blank" rel="noopener noreferrer">Rủi ro khí hậu và quy hoạch giao thông · 2020 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--03" id="section-03" data-chapter="03" aria-labelledby="title-03">
+        <div class="visual-card visual--risk glow-card">
+          <div class="visual-topline"><span>03 / KHUNG ĐÁNH GIÁ</span><span>RỦI RO = TỔ HỢP</span></div>
+          <div class="risk-diagram">
+            <div class="risk-equation">
+              <div class="risk-factor glow-card"><span class="factor-index">A</span><div class="factor-icon rain-icon">⌁</div><b>HIỂM HỌA</b><small>Mưa lớn · nắng nóng</small></div>
+              <span class="risk-operator">×</span>
+              <div class="risk-factor glow-card"><span class="factor-index">B</span><div class="factor-icon pin-icon">⌖</div><b>PHƠI LỘ</b><small>Vị trí · mật độ tài sản</small></div>
+              <span class="risk-operator">×</span>
+              <div class="risk-factor glow-card"><span class="factor-index">C</span><div class="factor-icon weak-icon">⌁</div><b>DỄ TỔN THƯƠNG</b><small>Thiết kế · tình trạng</small></div>
+            </div>
+            <div class="risk-result glow-card"><span>ĐÁNH GIÁ RỦI RO KHÍ HẬU</span><b>ĐIỂM NÀO CẦN ƯU TIÊN?</b><span class="result-arrow">↓</span></div>
+            <div class="risk-foot"><span>01 — XÁC ĐỊNH NGUY CƠ</span><span>02 — ĐÁNH GIÁ TÀI SẢN</span><span>03 — ƯU TIÊN HÀNH ĐỘNG</span></div>
+          </div>
+          <div class="visual-caption"><span class="caption-line"></span><span>CÙNG MỘT HIỂM HỌA, RỦI RO KHÁC NHAU</span></div>
+        </div>
+        <div class="chapter-copy reveal">
+          <div class="chapter-meta"><span>03</span><span class="meta-rule"></span><span>00:40</span></div>
+          <p class="eyebrow">TỪ HIỂM HỌA ĐẾN RỦI RO</p>
+          <h2 id="title-03">Không chỉ là<br><em>trời mưa hay nắng.</em></h2>
+          <p>Rủi ro cần được nhìn qua ba yếu tố: hiểm họa khí hậu, mức phơi lộ của công trình và mức độ dễ bị tổn thương. Một đoạn đường ở vị trí thấp, thoát nước kém có thể chịu ảnh hưởng khác hẳn đoạn đường được bảo vệ tốt.</p>
+          <p class="key-line"><span>KHUNG NHÌN</span> Hiểm họa × phơi lộ × dễ bị tổn thương.</p>
+          
+        
+          <div class="source-panel glow-card" aria-label="Các tài liệu uy tín liên quan">
+            <p class="source-heading">CÁC TÀI LIỆU UY TÍN</p>
+            <div class="source-links">
+              <a href="https://doi.org/10.3390/ijerph182312314" target="_blank" rel="noopener noreferrer">Khung đánh giá thích ứng cho đường bộ và đường sắt · 2021 <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.1016/j.trd.2020.102553" target="_blank" rel="noopener noreferrer">Rủi ro khí hậu và quy hoạch giao thông · 2020 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--04" id="section-04" data-chapter="04" aria-labelledby="title-04">
+        <div class="visual-card visual--flood glow-card">
+          <div class="visual-topline"><span>04 / MẶT CẮT CÔNG TRÌNH</span><span>NGẬP LỤT</span></div>
+          <svg viewBox="0 0 620 470" role="img" aria-label="Mặt cắt đường và cầu khi mưa lớn gây ngập">
+            <defs><pattern id="soilPattern" width="14" height="12" patternUnits="userSpaceOnUse"><path d="M0 12 14 0" stroke="#D595A5" stroke-opacity=".3" stroke-width="1"/></pattern></defs>
+            <rect width="620" height="470" fill="#F4E3E5"/><path d="M0 270H620V470H0Z" fill="#E8C9CE"/><path d="M0 270H620V470H0Z" fill="url(#soilPattern)"/>
+            <path d="M0 245Q95 225 185 244T370 241T620 246V340Q505 329 402 340T191 331T0 339Z" fill="#A1848E" opacity=".8"/>
+            <path d="M0 245Q95 225 185 244T370 241T620 246" fill="none" stroke="#C88798" stroke-width="4"/>
+            <path d="M28 227H263L292 242H414L445 225H592" fill="none" stroke="#3B1728" stroke-width="24" stroke-linecap="round"/>
+            <path d="M85 238V326M541 233V327" stroke="#3B1728" stroke-width="4" stroke-dasharray="8 7"/>
+            <path d="M301 242V359M416 240V359" stroke="#B77487" stroke-width="10"/><path d="M282 357H435" stroke="#B77487" stroke-width="12"/>
+            <path d="M303 319q10 8 0 16t0 16M415 317q10 8 0 16t0 16" fill="none" stroke="#782940" stroke-width="3" stroke-dasharray="3 5"/>
+            <path d="M52 263h59v59H52z" fill="#EDCFD3" stroke="#8B5367" stroke-width="3"/><path d="M52 276h59M52 290h59M52 304h59" stroke="#8B5367" stroke-width="2"/><path d="M57 284H104" stroke="#782940" stroke-width="5"/>
+            <g fill="#3B1728" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1"><text x="35" y="385">NỀN ĐƯỜNG BÃO HÒA</text><text x="251" y="408">XÓI QUANH MÓNG</text><text x="462" y="371">CỐNG QUÁ TẢI</text></g>
+            <g stroke="#782940" stroke-width="2"><path d="M110 321 172 368"/><path d="M361 369v24"/><path d="M518 332v22"/></g>
+            <g stroke="#D59BA7" stroke-width="2" opacity=".65"><path d="M122 37 108 81M204 29 190 73M492 36 478 80M560 80 546 124M356 34 342 78"/></g>
+            <rect x="28" y="27" width="142" height="31" rx="15" fill="#FFF8F2"/><circle cx="47" cy="42" r="5" fill="#782940"/><text x="61" y="46" fill="#3B1728" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">MƯA CỰC ĐOAN</text>
+          </svg>
+          <div class="visual-caption"><span class="caption-line"></span><span>NƯỚC TÌM ĐIỂM YẾU CỦA HỆ THỐNG</span></div>
+        </div>
+        <div class="chapter-copy reveal">
+          <div class="chapter-meta"><span>04</span><span class="meta-rule"></span><span>00:50</span></div>
+          <p class="eyebrow">NGẬP LỤT</p>
+          <h2 id="title-04">Nước làm lộ<br><em>điểm yếu bên dưới.</em></h2>
+          <p>Mưa lớn hoặc ngập kéo dài có thể làm quá tải hệ thống thoát nước, bão hòa nền đường, cuốn trôi đất đá, gây xói lở mái dốc hoặc xói quanh móng cầu. Một điểm hư hỏng có thể khiến cả tuyến phải hạn chế hoặc dừng khai thác.</p>
+          <p class="key-line"><span>CHUỖI TÁC ĐỘNG</span> Mưa lớn → thoát nước quá tải → hư hỏng → gián đoạn.</p>
+          
+        
+          <div class="source-panel glow-card" aria-label="Các tài liệu uy tín liên quan">
+            <p class="source-heading">CÁC TÀI LIỆU UY TÍN</p>
+            <div class="source-links">
+              <a href="https://doi.org/10.3390/su14148864" target="_blank" rel="noopener noreferrer">Tổng quan biện pháp thích ứng cho đường bộ · 2022 <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.1007/s10584-019-02434-5" target="_blank" rel="noopener noreferrer">Rủi ro ngập lụt với mạng lưới đường sắt · 2019 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--05" id="section-05" data-chapter="05" aria-labelledby="title-05">
+        <div class="visual-card visual--heat glow-card">
+          <div class="visual-topline"><span>05 / VẬT LIỆU &amp; NHIỆT</span><span>NẮNG NÓNG</span></div>
+          <svg viewBox="0 0 620 470" role="img" aria-label="Minh họa nắng nóng tác động lên mặt đường, khe cầu và đường ray">
+            <defs><linearGradient id="heatSky" x2="0" y2="1"><stop stop-color="#F2D6DB"/><stop offset="1" stop-color="#F7E7E5"/></linearGradient><linearGradient id="heatRoad" x2="0" y2="1"><stop stop-color="#956F7C"/><stop offset="1" stop-color="#5A2B40"/></linearGradient></defs>
+            <rect width="620" height="470" fill="url(#heatSky)"/><circle cx="486" cy="100" r="54" fill="#782940" opacity=".86"/><circle cx="486" cy="100" r="77" fill="none" stroke="#782940" stroke-opacity=".3" stroke-width="2"/><circle cx="486" cy="100" r="100" fill="none" stroke="#782940" stroke-opacity=".17" stroke-width="2"/>
+            <path d="M0 260H620V470H0Z" fill="#EFDADE"/><path d="M26 259H595" stroke="#542538" stroke-width="34"/><path d="M55 259H578" stroke="#FAEFEA" stroke-width="2" stroke-dasharray="20 18"/>
+            <path d="M35 247 82 235 122 248 167 229 204 244 248 230 286 246 329 234 364 248 410 231 451 244 493 230 535 244 585 234" fill="none" stroke="#782940" stroke-width="6"/>
+            <path d="M108 192 240 192M380 192 517 192" stroke="#3B1728" stroke-width="12" stroke-linecap="round"/><path d="M109 192v37M514 192v37" stroke="#3B1728" stroke-width="4"/><path d="M242 185v18M379 185v18" stroke="#782940" stroke-width="5"/><path d="M255 186h108" stroke="#782940" stroke-width="2" marker-end="url(#arrowHeat)" marker-start="url(#arrowHeat)"/>
+            <defs><marker id="arrowHeat" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto"><path d="M0 0 7 3.5 0 7" fill="none" stroke="#782940" stroke-width="1.2"/></marker></defs>
+            <path d="M101 337h422" stroke="#3B1728" stroke-width="7"/><path d="M126 326v22M166 326v22M206 326v22M246 326v22M286 326v22M326 326v22M366 326v22M406 326v22M446 326v22M486 326v22" stroke="#3B1728" stroke-width="5"/><path d="M105 330q28-19 52 0t52 0t52 0" fill="none" stroke="#782940" stroke-width="3"/>
+            <g fill="#3B1728" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1"><text x="33" y="393">MẶT ĐƯỜNG BIẾN DẠNG</text><text x="226" y="155">KHE CO GIÃN</text><text x="401" y="393">ĐƯỜNG RAY</text></g>
+            <path d="M131 359v20M301 207v-33M440 350v26" stroke="#782940" stroke-width="2"/>
+            <g stroke="#782940" stroke-width="3" opacity=".55"><path d="M428 182q-10-15 0-30t0-30"/><path d="M457 182q-10-15 0-30t0-30"/><path d="M339 232q-10-15 0-30t0-30"/></g>
+          </svg>
+          <div class="visual-caption"><span class="caption-line"></span><span>NHIỆT TÁC ĐỘNG KHÁC NHAU LÊN TỪNG CẤU KIỆN</span></div>
+        </div>
+        <div class="chapter-copy reveal">
+          <div class="chapter-meta"><span>05</span><span class="meta-rule"></span><span>00:45</span></div>
+          <p class="eyebrow">NẮNG NÓNG</p>
+          <h2 id="title-05">Nhiệt làm thay đổi<br><em>cách vật liệu làm việc.</em></h2>
+          <p>Nhiệt độ cao có thể góp phần làm mặt đường nhựa biến dạng; cấu kiện cầu chịu giãn nở nhiệt; đường ray có thể cong vênh trong điều kiện nóng cực đoan. Mức độ tác động phụ thuộc vật liệu, thiết kế, tình trạng công trình và điều kiện tại chỗ.</p>
+          <p class="key-line"><span>ĐIỂM CẦN NHỚ</span> Mỗi loại vật liệu và cấu kiện có ngưỡng, cơ chế ứng xử riêng.</p>
+          
+        
+          <div class="source-panel glow-card" aria-label="Các tài liệu uy tín liên quan">
+            <p class="source-heading">CÁC TÀI LIỆU UY TÍN</p>
+            <div class="source-links">
+              <a href="https://doi.org/10.1002/wcc.728" target="_blank" rel="noopener noreferrer">Tác động khí hậu đến hạ tầng đường sắt · 2021 <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.3390/su7055452" target="_blank" rel="noopener noreferrer">Road Infrastructure and Climate Change in Vietnam · 2015 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--06" id="section-06" data-chapter="06" aria-labelledby="title-06">
+        <div class="visual-card visual--network glow-card">
+          <div class="visual-topline"><span>06 / HỆ THỐNG KẾT NỐI</span><span>GIÁN ĐOẠN LAN TRUYỀN</span></div>
+          <svg viewBox="0 0 620 470" role="img" aria-label="Mạng lưới giao thông có một tuyến bị gián đoạn và các hướng đi thay thế">
+            <rect width="620" height="470" fill="#F4E3E5"/><g stroke="#F0DCE0" stroke-width="1"><path d="M30 55H590M30 105H590M30 155H590M30 205H590M30 255H590M30 305H590M30 355H590M30 405H590"/><path d="M65 25V440M135 25V440M205 25V440M275 25V440M345 25V440M415 25V440M485 25V440M555 25V440"/></g>
+            <g fill="none" stroke="#CB8F9D" stroke-width="7" stroke-linecap="round"><path d="M64 363 136 313 205 339 275 262 345 286 415 212 485 236 557 158"/><path d="M65 117 135 161 205 130 275 185 345 155 415 212"/><path d="M275 262 276 185M345 286 345 155M485 236 485 131 557 158"/></g>
+            <path d="M205 339 275 262 345 286" fill="none" stroke="#782940" stroke-width="8" stroke-linecap="round" stroke-dasharray="7 9"/>
+            <path d="M205 339Q235 390 290 374T415 337Q456 316 485 236" fill="none" stroke="#B77487" stroke-width="5" stroke-dasharray="4 8"/>
+            <g fill="#3B1728" stroke="#FFF8F2" stroke-width="4"><circle cx="64" cy="363" r="10"/><circle cx="136" cy="313" r="10"/><circle cx="205" cy="339" r="10"/><circle cx="275" cy="262" r="10"/><circle cx="345" cy="286" r="10"/><circle cx="415" cy="212" r="10"/><circle cx="485" cy="236" r="10"/><circle cx="557" cy="158" r="10"/></g>
+            <circle cx="275" cy="262" r="25" fill="#782940" fill-opacity=".22"/><circle cx="275" cy="262" r="15" fill="#782940"/><path d="M267 254 283 270M283 254 267 270" stroke="#FFFCF8" stroke-width="3"/>
+            <rect x="32" y="33" width="153" height="39" rx="3" fill="#FFFCF8"/><circle cx="49" cy="52" r="5" fill="#782940"/><text x="63" y="56" fill="#3B1728" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">ĐIỂM GIÁN ĐOẠN</text>
+            <rect x="396" y="371" width="182" height="42" rx="3" fill="#FFFCF8"/><path d="M410 392h28" stroke="#B77487" stroke-width="4" stroke-dasharray="4 5"/><text x="449" y="396" fill="#3B1728" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1">TUYẾN THAY THẾ</text>
+            <g fill="#3B1728" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1"><text x="42" y="434">MẠNG LƯỚI ĐÔ THỊ</text><text x="492" y="102">TRUNG TÂM</text></g>
+          </svg>
+          <div class="visual-caption"><span class="caption-line"></span><span>MỘT NÚT ĐỨT — NHIỀU TUYẾN ĐỔI HƯỚNG</span></div>
+        </div>
+        <div class="chapter-copy reveal">
+          <div class="chapter-meta"><span>06</span><span class="meta-rule"></span><span>00:35</span></div>
+          <p class="eyebrow">GIÁN ĐOẠN MẠNG LƯỚI</p>
+          <h2 id="title-06">Một điểm hỏng<br><em>không đứng một mình.</em></h2>
+          <p>Khi một tuyến bị ngập hoặc đóng cửa, phương tiện chuyển sang đường khác. Điều đó có thể làm tăng áp lực lên các tuyến lân cận và ảnh hưởng đến hoạt động của cả hệ thống giao thông.</p>
+          <p class="key-line"><span>GÓC NHÌN MẠNG LƯỚI</span> Đánh giá cả tuyến thay thế, nút trọng yếu và hệ thống phụ thuộc.</p>
+          
+        
+          <div class="source-panel glow-card" aria-label="Các tài liệu uy tín liên quan">
+            <p class="source-heading">CÁC TÀI LIỆU UY TÍN</p>
+            <div class="source-links">
+              <a href="https://doi.org/10.1016/j.trd.2020.102553" target="_blank" rel="noopener noreferrer">Rủi ro khí hậu và quy hoạch giao thông · 2020 <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.1007/s10584-019-02434-5" target="_blank" rel="noopener noreferrer">Rủi ro ngập lụt với mạng lưới đường sắt · 2019 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--07" id="section-07" data-chapter="07" aria-labelledby="title-07">
+        <div class="visual-card visual--vietnam glow-card">
+          <div class="visual-topline"><span>07 / BẰNG CHỨNG NGHIÊN CỨU</span><span>VIỆT NAM</span></div>
+          <div class="study-card glow-card">
+            <div class="study-stamp">CASE<br><b>VN</b></div>
+            <p class="study-kicker">NGHIÊN CỨU VỀ ĐƯỜNG BỘ</p>
+            <h3>Road Infrastructure<br>and Climate Change<br>in Vietnam</h3>
+            <div class="study-authors">CHINOWSKY · SCHWEIKERT<br>STRZEPEK · STRZEPEK</div>
+            <div class="study-year">SUSTAINABILITY <span>2015</span></div>
+            <div class="study-stressors"><span>NHIỆT ĐỘ</span><i></i><span>MƯA</span><i></i><span>NGẬP</span><i></i><span>MỰC NƯỚC BIỂN</span></div>
+            <div class="study-note"><span>PHẠM VI NGHIÊN CỨU</span><b>ĐƯỜNG BỘ</b><span>Kết quả phụ thuộc mô hình và giả định của nghiên cứu.</span></div>
+          </div>
+          <div class="visual-caption"><span class="caption-line"></span><span>ĐỌC ĐÚNG PHẠM VI CỦA BẰNG CHỨNG</span></div>
+        </div>
+        <div class="chapter-copy reveal">
+          <div class="chapter-meta"><span>07</span><span class="meta-rule"></span><span>00:45</span></div>
+          <p class="eyebrow">NGHIÊN CỨU TẠI VIỆT NAM</p>
+          <h2 id="title-07">Đặt câu hỏi<br><em>trong bối cảnh của ta.</em></h2>
+          <p>Chinowsky và cộng sự nghiên cứu tác động của nhiệt độ, mưa, ngập lụt và mực nước biển lên hạ tầng đường bộ tại Việt Nam theo các kịch bản khí hậu. Đây là đánh giá dựa trên mô hình và giả định nghiên cứu, không phải số liệu hiện trạng cho mọi địa phương hay mọi loại công trình.</p>
+          <p class="key-line"><span>CÁCH DÙNG NGUỒN</span> Tham khảo cơ chế và phương pháp; không suy rộng máy móc con số.</p>
+          
+        
+          <div class="source-panel glow-card" aria-label="Các tài liệu uy tín liên quan">
+            <p class="source-heading">CÁC TÀI LIỆU UY TÍN</p>
+            <div class="source-links">
+              <a href="https://doi.org/10.3390/su7055452" target="_blank" rel="noopener noreferrer">Road Infrastructure and Climate Change in Vietnam · 2015 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--08" id="section-08" data-chapter="08" aria-labelledby="title-08">
+        <div class="visual-card visual--community glow-card">
+          <div class="visual-topline"><span>08 / TÁC ĐỘNG XÃ HỘI</span><span>VƯỢT RA NGOÀI CÔNG TRÌNH</span></div>
+          <div class="cascade">
+            <div class="cascade-item glow-card"><span class="cascade-number">01</span><div class="cascade-symbol symbol-damage">⌁</div><div><b>HƯ HẠI</b><small>Sửa chữa · bảo trì</small></div></div>
+            <span class="cascade-connector"></span>
+            <div class="cascade-item glow-card"><span class="cascade-number">02</span><div class="cascade-symbol symbol-traffic">↗</div><div><b>GIÁN ĐOẠN</b><small>Chậm trễ · đổi tuyến</small></div></div>
+            <span class="cascade-connector"></span>
+            <div class="cascade-item cascade-item--last glow-card"><span class="cascade-number">03</span><div class="cascade-symbol symbol-people">◎</div><div><b>ĐỜI SỐNG</b><small>Tiếp cận dịch vụ · sinh kế</small></div></div>
+            <div class="cascade-bottom"><span>HẠ TẦNG</span><span>GIAO THÔNG</span><span>CỘNG ĐỒNG</span></div>
+          </div>
+          <div class="visual-caption"><span class="caption-line"></span><span>GIỮ KẾT NỐI CŨNG LÀ GIẢM THIỆT HẠI</span></div>
+        </div>
+        <div class="chapter-copy reveal">
+          <div class="chapter-meta"><span>08</span><span class="meta-rule"></span><span>00:35</span></div>
+          <p class="eyebrow">TÁC ĐỘNG ĐẾN CỘNG ĐỒNG</p>
+          <h2 id="title-08">Thiệt hại không dừng<br><em>ở mặt đường.</em></h2>
+          <p>Khi giao thông gián đoạn, hệ quả có thể gồm chi phí sửa chữa, chậm trễ vận chuyển và khó tiếp cận nơi làm việc, trường học hoặc dịch vụ thiết yếu. Khả năng chống chịu của hạ tầng giúp duy trì kết nối khi xảy ra sự kiện cực đoan.</p>
+          <p class="key-line"><span>Ý NGHĨA BỀN VỮNG</span> Bảo vệ tài sản đồng thời bảo vệ khả năng tiếp cận và hoạt động kinh tế.</p>
+          
+        
+          <div class="source-panel glow-card" aria-label="Các tài liệu uy tín liên quan">
+            <p class="source-heading">CÁC TÀI LIỆU UY TÍN</p>
+            <div class="source-links">
+              <a href="https://doi.org/10.3390/ijerph182312314" target="_blank" rel="noopener noreferrer">Khung đánh giá thích ứng cho đường bộ và đường sắt · 2021 <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.1016/j.trd.2020.102553" target="_blank" rel="noopener noreferrer">Rủi ro khí hậu và quy hoạch giao thông · 2020 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--09" id="section-09" data-chapter="09" aria-labelledby="title-09">
+        <div class="visual-card visual--adaptation glow-card">
+          <div class="visual-topline"><span>09 / LỘ TRÌNH THÍCH ỨNG</span><span>GIẢI PHÁP THEO RỦI RO</span></div>
+          <div class="adaptation-grid">
+            <div class="adapt-step glow-card"><span class="adapt-index">01</span><div class="adapt-icon icon-plan"><i></i><i></i><i></i></div><b>QUY HOẠCH</b><small>Bản đồ nguy cơ<br>Kiểm kê tài sản</small><span class="adapt-line"></span></div>
+            <div class="adapt-step glow-card"><span class="adapt-index">02</span><div class="adapt-icon icon-build"><i></i><i></i><i></i></div><b>THIẾT KẾ</b><small>Thoát nước<br>Gia cố công trình</small><span class="adapt-line"></span></div>
+            <div class="adapt-step glow-card"><span class="adapt-index">03</span><div class="adapt-icon icon-monitor"><i></i><i></i><i></i></div><b>GIÁM SÁT</b><small>Kiểm tra định kỳ<br>Cảnh báo sớm</small><span class="adapt-line"></span></div>
+            <div class="adapt-step glow-card"><span class="adapt-index">04</span><div class="adapt-icon icon-operate"><i></i><i></i><i></i></div><b>VẬN HÀNH</b><small>Phân luồng<br>Tuyến thay thế</small></div>
+            <div class="adapt-footer glow-card"><span>RỦI RO TẠI CHỖ</span><span class="adapt-footer-arrow">→</span><b>ƯU TIÊN ĐÚNG BIỆN PHÁP</b></div>
+          </div>
+          <div class="visual-caption"><span class="caption-line"></span><span>KHÔNG CÓ MỘT GIẢI PHÁP CHO MỌI NƠI</span></div>
+        </div>
+        <div class="chapter-copy reveal">
+          <div class="chapter-meta"><span>09</span><span class="meta-rule"></span><span>01:05</span></div>
+          <p class="eyebrow">GIẢI PHÁP THÍCH ỨNG</p>
+          <h2 id="title-09">Đánh giá trước.<br><em>Ưu tiên đúng chỗ.</em></h2>
+          <ul class="solution-list">
+            <li><b>Quy hoạch:</b> lập bản đồ nguy cơ, kiểm kê công trình, xác định tuyến trọng yếu.</li>
+            <li><b>Thiết kế:</b> cải thiện thoát nước, gia cố mái dốc, bảo vệ móng cầu và cân nhắc vật liệu phù hợp.</li>
+            <li><b>Giám sát:</b> kiểm tra sau mưa bão, theo dõi biến dạng và xử lý sớm điểm yếu.</li>
+            <li><b>Vận hành:</b> chuẩn bị cảnh báo, phương án phân luồng và tuyến thay thế.</li>
+          </ul>
+          <p class="key-line"><span>NGUYÊN TẮC</span> Chọn biện pháp theo rủi ro, địa điểm, chi phí và hiệu quả giảm thiệt hại.</p>
+          
+        
+          <div class="source-panel glow-card" aria-label="Các tài liệu uy tín liên quan">
+            <p class="source-heading">CÁC TÀI LIỆU UY TÍN</p>
+            <div class="source-links">
+              <a href="https://doi.org/10.3390/su14148864" target="_blank" rel="noopener noreferrer">Tổng quan biện pháp thích ứng cho đường bộ · 2022 <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.3390/ijerph182312314" target="_blank" rel="noopener noreferrer">Khung đánh giá thích ứng cho đường bộ và đường sắt · 2021 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter chapter--10" id="section-10" data-chapter="10" aria-labelledby="title-10">
+        <div class="visual-card visual--future glow-card">
+          <div class="visual-topline"><span>10 / KẾT LUẬN</span><span>THIẾT KẾ CHO KHẢ NĂNG CHỐNG CHỊU</span></div>
+          <svg viewBox="0 0 620 470" role="img" aria-label="Cầu và mạng lưới giao thông được kết nối với các lớp bảo vệ">
+            <defs><linearGradient id="futureSky" x2="0" y2="1"><stop stop-color="#F7F5E9"/><stop offset="1" stop-color="#F7F5E9"/></linearGradient><pattern id="futureGrid" width="22" height="22" patternUnits="userSpaceOnUse"><path d="M22 0H0V22" fill="none" stroke="#78AD8D" stroke-opacity=".12"/></pattern></defs>
+            <rect width="620" height="470" fill="url(#futureSky)"/><rect width="620" height="470" fill="url(#futureGrid)"/>
+            <circle cx="493" cy="110" r="45" fill="#5A9D80" opacity=".36"/><path d="M0 302Q90 291 170 302T325 298T480 299T620 294V470H0Z" fill="#779185"/>
+            <g fill="#5D8C74" opacity=".35"><path d="M36 296V179h40v117h31v-78h43v78h34V152h50v144h33v-97h40v97h34v-62h45v62h35V173h50v123h44v-77h40v77h31v63H36z"/></g>
+            <path d="M15 278Q166 273 263 284Q353 294 418 279Q516 255 608 267" fill="none" stroke="#123F35" stroke-width="17" stroke-linecap="round"/>
+            <path d="M263 284V151M419 279V151M263 153Q341 123 419 153" fill="none" stroke="#1F6B55" stroke-width="5"/>
+            <path d="M273 158 294 282M292 151 313 286M311 145 331 288M331 143 350 289M351 145 371 287M371 149 391 284M391 153 410 281" fill="none" stroke="#1F6B55" stroke-opacity=".56" stroke-width="2"/>
+            <path d="M247 285h-25v35h80v-35M398 280h-25v40h78v-40" fill="#A9DCC2" stroke="#123F35" stroke-width="2"/>
+            <path d="M262 326V351M419 326V351M248 351h31M405 351h30" stroke="#123F35" stroke-width="3"/>
+            <path d="M20 373Q118 361 211 373T402 371T600 372" fill="none" stroke="#D7E8DC" stroke-width="3"/><path d="M20 405Q118 393 211 405T402 403T600 404" fill="none" stroke="#D7E8DC" stroke-width="2"/>
+            <g fill="#123F35" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1"><text x="37" y="47">KHÍ HẬU</text><text x="235" y="111">CÔNG TRÌNH</text><text x="464" y="443">CỘNG ĐỒNG</text></g>
+            <g fill="none" stroke="#1F6B55" stroke-width="2"><path d="M74 60 120 106"/><path d="M302 119l18 19"/><path d="M505 431l-26-17"/></g>
+            <g fill="#1F6B55"><circle cx="120" cy="106" r="4"/><circle cx="320" cy="138" r="4"/><circle cx="479" cy="414" r="4"/></g>
+          </svg>
+          <div class="visual-caption"><span class="caption-line"></span><span>HẠ TẦNG — KHÍ HẬU — CỘNG ĐỒNG</span></div>
+        </div>
+        <div class="chapter-copy reveal">
+          <div class="chapter-meta"><span>10</span><span class="meta-rule"></span><span>00:35</span></div>
+          <p class="eyebrow">KẾT LUẬN</p>
+          <h2 id="title-10">Công trình chống chịu<br><em>bắt đầu từ hôm nay.</em></h2>
+          <p>Cần xét đồng thời hiểm họa, vị trí và tình trạng công trình, cùng hậu quả nếu giao thông bị gián đoạn. Khảo sát, thiết kế, vật liệu, thoát nước và bảo trì đều có thể góp phần nâng cao khả năng chống chịu.</p>
+          <p class="closing-question glow-card">Nếu được ưu tiên nâng cấp một hạng mục trước, nhóm sẽ chọn gì — và cần dữ liệu nào để quyết định?</p>
+          
+        
+          <div class="source-panel glow-card" aria-label="Các tài liệu uy tín liên quan">
+            <p class="source-heading">CÁC TÀI LIỆU UY TÍN</p>
+            <div class="source-links">
+              <a href="https://doi.org/10.3390/ijerph182312314" target="_blank" rel="noopener noreferrer">Khung đánh giá thích ứng cho đường bộ và đường sắt · 2021 <span aria-hidden="true">↗</span></a>
+              <a href="https://doi.org/10.3390/su14148864" target="_blank" rel="noopener noreferrer">Tổng quan biện pháp thích ứng cho đường bộ · 2022 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="references" id="references" aria-labelledby="references-title">
+      <div class="references-heading">
+        <p class="eyebrow">ĐỌC THÊM</p>
+        <h2 id="references-title">Tài liệu<br><em>tham khảo.</em></h2>
+        <p>Các nghiên cứu dưới đây hỗ trợ phần tổng quan về cơ chế rủi ro, đánh giá thích ứng và bối cảnh đường bộ Việt Nam. Kết quả ngoài Việt Nam được dùng để tham khảo cơ chế hoặc phương pháp, không suy rộng trực tiếp thành số liệu trong nước.</p>
+        <div class="reference-count"><span>06</span><span>NGUỒN NGHIÊN CỨU</span></div>
+      </div>
+      <ol class="reference-list">
+        <li id="ref-1" class="glow-card"><span class="ref-number">[1]</span><div><p class="ref-authors">Chinowsky, P. S., Schweikert, A. E., Strzepek, N., &amp; Strzepek, K. <span>2015</span></p><a class="ref-title" href="https://doi.org/10.3390/su7055452" target="_blank" rel="noopener noreferrer">Road Infrastructure and Climate Change in Vietnam</a><p class="ref-journal">Sustainability, 7(5), 5452–5470.</p><span class="doi">doi.org/10.3390/su7055452 ↗</span></div></li>
+        <li id="ref-2" class="glow-card"><span class="ref-number">[2]</span><div><p class="ref-authors">de Abreu, V. H. S., Santos, A. S., &amp; Monteiro, T. G. M. <span>2022</span></p><a class="ref-title" href="https://doi.org/10.3390/su14148864" target="_blank" rel="noopener noreferrer">Climate Change Impacts on the Road Transport Infrastructure: A Systematic Review on Adaptation Measures</a><p class="ref-journal">Sustainability, 14(14), 8864.</p><span class="doi">doi.org/10.3390/su14148864 ↗</span></div></li>
+        <li id="ref-3" class="glow-card"><span class="ref-number">[3]</span><div><p class="ref-authors">Andersson-Sköld, Y., Nordin, L., Nyberg, E., &amp; Johannesson, M. <span>2021</span></p><a class="ref-title" href="https://doi.org/10.3390/ijerph182312314" target="_blank" rel="noopener noreferrer">A Framework for Identification, Assessment and Prioritization of Climate Change Adaptation Measures for Roads and Railways</a><p class="ref-journal">International Journal of Environmental Research and Public Health, 18(23), 12314.</p><span class="doi">doi.org/10.3390/ijerph182312314 ↗</span></div></li>
+        <li id="ref-4" class="glow-card"><span class="ref-number">[4]</span><div><p class="ref-authors">Palin, E. J., Stipanovic Oslakovic, I., Gavin, K., &amp; Quinn, A. <span>2021</span></p><a class="ref-title" href="https://doi.org/10.1002/wcc.728" target="_blank" rel="noopener noreferrer">Implications of climate change for railway infrastructure</a><p class="ref-journal">WIREs Climate Change, 12(5), e728.</p><span class="doi">doi.org/10.1002/wcc.728 ↗</span></div></li>
+        <li id="ref-5" class="glow-card"><span class="ref-number">[5]</span><div><p class="ref-authors">Wang, T., Qu, Z., Yang, Z., Nichol, T., Clarke, G., &amp; Ge, Y.-E. <span>2020</span></p><a class="ref-title" href="https://doi.org/10.1016/j.trd.2020.102553" target="_blank" rel="noopener noreferrer">Climate change research on transportation systems: Climate risks, adaptation and planning</a><p class="ref-journal">Transportation Research Part D: Transport and Environment, 88, 102553.</p><span class="doi">doi.org/10.1016/j.trd.2020.102553 ↗</span></div></li>
+        <li id="ref-6" class="glow-card"><span class="ref-number">[6]</span><div><p class="ref-authors">Bubeck, P., Dillenardt, L., Alfieri, L., Feyen, L., Thieken, A. H., &amp; Kellermann, P. <span>2019</span></p><a class="ref-title" href="https://doi.org/10.1007/s10584-019-02434-5" target="_blank" rel="noopener noreferrer">Global warming to increase flood risk on European railways</a><p class="ref-journal">Climatic Change, 155, 19–36.</p><span class="doi">doi.org/10.1007/s10584-019-02434-5 ↗</span></div></li>
+      </ol>
+    </section>
+
+    <section class="team-roster" id="team-roster" aria-labelledby="team-title">
+      <div class="team-inner">
+        <p class="eyebrow">NHÓM THỰC HIỆN</p>
+        <h2 id="team-title">Thành viên <em>nhóm 05.</em></h2>
+        <ol class="member-list">
+          <li class="glow-card"><span class="member-number">01</span><span class="member-name">Lưu Gia Hưng</span><span class="member-id">1092371</span></li>
+          <li class="glow-card"><span class="member-number">02</span><span class="member-name">Nguyễn Chí Hướng</span><span class="member-id">1092571</span></li>
+          <li class="glow-card"><span class="member-number">03</span><span class="member-name">Đoàn Hữu Quang Huy</span><span class="member-id">1092071</span></li>
+          <li class="glow-card"><span class="member-number">04</span><span class="member-name">Nguyễn Dương Đức Huy</span><span class="member-id">1092171</span></li>
+          <li class="glow-card"><span class="member-number">05</span><span class="member-name">Bùi Thanh Huyền</span><span class="member-id">1092271</span></li>
+        </ol>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <a class="footer-brand" href="#top">HẠ TẦNG <i>/</i> KHÍ HẬU</a>
+      <p>MÔI TRƯỜNG &amp; PHÁT TRIỂN BỀN VỮNG <span>·</span> NHÓM 05</p>
+      <a class="back-top" href="#top">LÊN ĐẦU TRANG <span aria-hidden="true">↑</span></a>
+    </footer>
+  </main>
+</body>
+</html>
+
+
+
